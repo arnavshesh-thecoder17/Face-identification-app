@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Identification App</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS for styles -->
+</head>
+<body>
+    <header>
+        <h1>Face Identification App</h1>
+    </header>
+    <main>
+        <section id="image-analysis">
+            <h2>Image Analysis</h2>
+            <input type="file" id="uploadImage" accept="image/*">
+            <button id="analyzeImage">Analyze Image</button>
+            <div id="imageResults"></div>
+        </section>
+        <section id="webcam-capture">
+            <h2>Webcam Capture</h2>
+            <video id="video" width="640" height="480" autoplay></video>
+            <button id="capture">Capture Photo</button>
+            <canvas id="canvas" width="640" height="480"></canvas>
+            <div id="webcamResults"></div>
+        </section>
+        <section id="face-comparison">
+            <h2>Face Comparison</h2>
+            <input type="file" id="compareImage1" accept="image/*">
+            <input type="file" id="compareImage2" accept="image/*">
+            <button id="compareFaces">Compare Faces</button>
+            <div id="comparisonResults"></div>
+        </section>
+        <section id="video-analysis">
+            <h2>Video Analysis</h2>
+            <input type="file" id="videoFile" accept="video/*">
+            <button id="analyzeVideo">Analyze Video</button>
+            <div id="videoResults"></div>
+        </section>
+        <section id="batch-processing">
+            <h2>Batch Processing</h2>
+            <input type="file" id="batchUpload" accept="image/*" multiple>
+            <button id="processBatch">Process Batch</button>
+            <div id="batchResults"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Face Identification App. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script> <!-- Link to external JS for functionality -->
+</body>
+</html>
